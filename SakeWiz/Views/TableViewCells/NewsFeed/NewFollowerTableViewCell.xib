@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewFollowerTableViewCell" rowHeight="150" id="KGk-i7-Jjw" customClass="NewFollowerTableViewCell" customModule="SakeWiz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="455" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="455" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="some_handsome_guy" translatesAutoresizingMaskIntoConstraints="NO" id="E3t-JP-Wg1">
+                        <rect key="frame" x="8" y="8" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="E3t-JP-Wg1" secondAttribute="height" multiplier="1:1" id="qTQ-zh-6Zc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Someone wants to follow you" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hgE-7H-flC">
+                        <rect key="frame" x="91" y="8" width="262" height="75"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5k9-3I-KTN">
+                        <rect key="frame" x="407" y="0.0" width="40" height="149.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Lys-1x-V2E"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock_icon_gray" translatesAutoresizingMaskIntoConstraints="NO" id="EGE-eR-wDm">
+                        <rect key="frame" x="361" y="56" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="NQy-Cp-DLG"/>
+                            <constraint firstAttribute="width" secondItem="EGE-eR-wDm" secondAttribute="height" multiplier="1:1" id="avt-TF-jl6"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nka-7W-5O6">
+                        <rect key="frame" x="91" y="83" width="262" height="66.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOw-C8-HHo">
+                                <rect key="frame" x="135" y="13" width="119" height="40.5"/>
+                                <state key="normal" title="Decline">
+                                    <color key="titleColor" red="0.89688183659999998" green="0.53326922450000003" blue="0.49963855629999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.89688183662249954" green="0.53326922446250868" blue="0.49963855631249765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="DeclineButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cMb-pI-CHs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X81-23-WoT">
+                                <rect key="frame" x="8" y="13" width="119" height="40.5"/>
+                                <color key="backgroundColor" red="0.57480698320000001" green="0.84430185400000002" blue="0.63099867190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Accept">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="AcceptButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="otB-Jf-sfo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X81-23-WoT" firstAttribute="height" secondItem="Nka-7W-5O6" secondAttribute="height" multiplier="0.6" id="NfP-ms-g3l"/>
+                            <constraint firstItem="YOw-C8-HHo" firstAttribute="centerY" secondItem="Nka-7W-5O6" secondAttribute="centerY" id="TeP-Si-7dH"/>
+                            <constraint firstItem="X81-23-WoT" firstAttribute="centerY" secondItem="Nka-7W-5O6" secondAttribute="centerY" id="VeZ-cH-lW6"/>
+                            <constraint firstItem="X81-23-WoT" firstAttribute="leading" secondItem="Nka-7W-5O6" secondAttribute="leading" constant="8" id="VsN-7L-gNJ"/>
+                            <constraint firstItem="YOw-C8-HHo" firstAttribute="leading" secondItem="X81-23-WoT" secondAttribute="trailing" constant="8" id="ad6-ZS-4NL"/>
+                            <constraint firstAttribute="trailing" secondItem="YOw-C8-HHo" secondAttribute="trailing" constant="8" id="b7Z-KL-iXN"/>
+                            <constraint firstItem="YOw-C8-HHo" firstAttribute="width" secondItem="X81-23-WoT" secondAttribute="width" id="mK1-bT-LKy"/>
+                            <constraint firstItem="YOw-C8-HHo" firstAttribute="height" secondItem="X81-23-WoT" secondAttribute="height" id="pLp-Oi-hGZ"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiN-Gb-qQ1">
+                        <rect key="frame" x="7.5" y="7.5" width="75" height="75"/>
+                        <connections>
+                            <action selector="UserAvatarTouched:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jgL-we-g2M"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Nka-7W-5O6" firstAttribute="top" secondItem="hgE-7H-flC" secondAttribute="bottom" id="0eq-AR-1To"/>
+                    <constraint firstItem="CiN-Gb-qQ1" firstAttribute="centerX" secondItem="E3t-JP-Wg1" secondAttribute="centerX" id="1nS-8m-8kJ"/>
+                    <constraint firstItem="CiN-Gb-qQ1" firstAttribute="width" secondItem="E3t-JP-Wg1" secondAttribute="width" id="5yj-MB-oEL"/>
+                    <constraint firstItem="CiN-Gb-qQ1" firstAttribute="centerY" secondItem="E3t-JP-Wg1" secondAttribute="centerY" id="6lU-7h-l0v"/>
+                    <constraint firstItem="EGE-eR-wDm" firstAttribute="centerY" secondItem="5k9-3I-KTN" secondAttribute="centerY" id="9D0-u3-Cxa"/>
+                    <constraint firstItem="EGE-eR-wDm" firstAttribute="leading" secondItem="Nka-7W-5O6" secondAttribute="trailing" constant="8" id="A32-NG-3dQ"/>
+                    <constraint firstItem="5k9-3I-KTN" firstAttribute="leading" secondItem="EGE-eR-wDm" secondAttribute="trailing" constant="8" id="F0j-Dy-zgA"/>
+                    <constraint firstItem="hgE-7H-flC" firstAttribute="height" secondItem="E3t-JP-Wg1" secondAttribute="height" id="ZBZ-cU-lZY"/>
+                    <constraint firstItem="Nka-7W-5O6" firstAttribute="leading" secondItem="E3t-JP-Wg1" secondAttribute="trailing" constant="8" id="Zdh-A0-hpb"/>
+                    <constraint firstAttribute="trailing" secondItem="5k9-3I-KTN" secondAttribute="trailing" constant="8" id="bQm-q9-2OJ"/>
+                    <constraint firstItem="CiN-Gb-qQ1" firstAttribute="height" secondItem="E3t-JP-Wg1" secondAttribute="height" id="cDa-XU-HSf"/>
+                    <constraint firstItem="hgE-7H-flC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="duy-3d-xI8"/>
+                    <constraint firstItem="E3t-JP-Wg1" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.5" id="gGg-z8-8UU"/>
+                    <constraint firstItem="E3t-JP-Wg1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="mBS-lU-5IJ"/>
+                    <constraint firstAttribute="bottom" secondItem="5k9-3I-KTN" secondAttribute="bottom" id="nZM-no-wNy"/>
+                    <constraint firstItem="hgE-7H-flC" firstAttribute="leading" secondItem="E3t-JP-Wg1" secondAttribute="trailing" constant="8" id="nhC-5R-gqe"/>
+                    <constraint firstItem="EGE-eR-wDm" firstAttribute="leading" secondItem="hgE-7H-flC" secondAttribute="trailing" constant="8" id="r2s-PR-AjD"/>
+                    <constraint firstAttribute="bottom" secondItem="Nka-7W-5O6" secondAttribute="bottom" id="u2c-wD-4g1"/>
+                    <constraint firstItem="E3t-JP-Wg1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="uN2-gE-JaY"/>
+                    <constraint firstItem="5k9-3I-KTN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ytZ-xs-zRj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="AcceptButton" destination="X81-23-WoT" id="gj2-mo-WoQ"/>
+                <outlet property="DeclineButton" destination="YOw-C8-HHo" id="fvN-c2-dSq"/>
+                <outlet property="clockIcon" destination="EGE-eR-wDm" id="Fhv-EI-BBZ"/>
+                <outlet property="clockIconHeight" destination="NQy-Cp-DLG" id="SsG-r9-5Wx"/>
+                <outlet property="messageLabel" destination="hgE-7H-flC" id="Zdt-IA-RFe"/>
+                <outlet property="timeStampLabel" destination="5k9-3I-KTN" id="dBL-6P-RYq"/>
+                <outlet property="userAvatarImageView" destination="E3t-JP-Wg1" id="e8J-5w-hel"/>
+            </connections>
+            <point key="canvasLocation" x="107" y="-51"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clock_icon_gray" width="16" height="16"/>
+        <image name="some_handsome_guy" width="544" height="960"/>
+    </resources>
+</document>

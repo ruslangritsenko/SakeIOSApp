@@ -1,0 +1,6 @@
+framework module Pods_SakeWizUITests {
+  umbrella header "Pods-SakeWizUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

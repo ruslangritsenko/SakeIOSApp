@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductDetailsCollectionViewCellEnd" customModule="SakeWiz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RO4-jc-dP8">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNu-8U-KEq">
+                                <rect key="frame" x="8" y="0.0" width="96" height="200"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FD2-0e-QpM">
+                                <rect key="frame" x="104" y="0.0" width="96" height="200"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lNu-8U-KEq" secondAttribute="bottom" id="HNB-XW-vXk"/>
+                            <constraint firstItem="lNu-8U-KEq" firstAttribute="top" secondItem="RO4-jc-dP8" secondAttribute="top" id="KpB-Mo-xRt"/>
+                            <constraint firstItem="FD2-0e-QpM" firstAttribute="width" secondItem="lNu-8U-KEq" secondAttribute="width" id="Kz8-mL-aOb"/>
+                            <constraint firstItem="FD2-0e-QpM" firstAttribute="top" secondItem="RO4-jc-dP8" secondAttribute="top" id="SQB-Yl-09l"/>
+                            <constraint firstAttribute="bottom" secondItem="FD2-0e-QpM" secondAttribute="bottom" id="cJF-AH-k5k"/>
+                            <constraint firstItem="FD2-0e-QpM" firstAttribute="leading" secondItem="lNu-8U-KEq" secondAttribute="trailing" id="j80-y8-wCZ"/>
+                            <constraint firstItem="lNu-8U-KEq" firstAttribute="leading" secondItem="RO4-jc-dP8" secondAttribute="leading" constant="8" id="vZg-TD-iHd"/>
+                            <constraint firstAttribute="trailing" secondItem="FD2-0e-QpM" secondAttribute="trailing" id="xuk-zM-ZJh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="RO4-jc-dP8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GMO-Jm-yYG"/>
+                <constraint firstAttribute="bottom" secondItem="RO4-jc-dP8" secondAttribute="bottom" id="L9o-Ml-xt0"/>
+                <constraint firstAttribute="trailing" secondItem="RO4-jc-dP8" secondAttribute="trailing" id="MhE-81-bxy"/>
+                <constraint firstItem="RO4-jc-dP8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eby-t1-7Aw"/>
+            </constraints>
+            <size key="customSize" width="200" height="200"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="6"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="ServingSuggestionsLabel" destination="FD2-0e-QpM" id="Jtp-4X-RWU"/>
+                <outlet property="ServingSuggestionsTitle" destination="lNu-8U-KEq" id="Txf-D5-DUp"/>
+            </connections>
+            <point key="canvasLocation" x="109" y="129"/>
+        </collectionViewCell>
+    </objects>
+</document>

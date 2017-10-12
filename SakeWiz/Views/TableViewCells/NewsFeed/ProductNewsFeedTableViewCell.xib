@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductNewsFeedTableViewCell" rowHeight="100" id="KGk-i7-Jjw" customClass="ProductNewsFeedTableViewCell" customModule="SakeWiz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ri8-kC-0zu">
+                        <rect key="frame" x="8" y="12.5" width="74.5" height="74.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ri8-kC-0zu" secondAttribute="height" multiplier="1:1" id="Kzm-t0-mrY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 mins." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L06-Js-SFM">
+                        <rect key="frame" x="262" y="8" width="50" height="84"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="wpv-VR-35O"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock_icon_gray" translatesAutoresizingMaskIntoConstraints="NO" id="NrQ-ag-6pY">
+                        <rect key="frame" x="234" y="40" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="NrQ-ag-6pY" secondAttribute="height" multiplier="1:1" id="Cb1-XS-Khz"/>
+                            <constraint firstAttribute="height" constant="20" id="NUp-pC-kCo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wiz Matched Your Sake!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qe3-qH-OTy">
+                        <rect key="frame" x="90.5" y="8" width="135.5" height="22.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Akita Junmai Sake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55T-Au-M6j">
+                        <rect key="frame" x="90.5" y="34.5" width="135.5" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.90404558180000005" green="0.61071419719999998" blue="0.58246165510000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUNMAI DAIGINJO SHU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9I2-qm-ZgA">
+                        <rect key="frame" x="90.5" y="66" width="135.5" height="15.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.8197138772" green="0.8197138772" blue="0.8197138772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_circle" translatesAutoresizingMaskIntoConstraints="NO" id="MC2-Ts-sZm">
+                        <rect key="frame" x="73.5" y="4.5" width="18" height="18.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="MC2-Ts-sZm" secondAttribute="height" multiplier="1:1" id="BQI-TC-Wsq"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MC2-Ts-sZm" firstAttribute="height" secondItem="ri8-kC-0zu" secondAttribute="height" multiplier="0.25" id="0a2-uL-CIu"/>
+                    <constraint firstItem="qe3-qH-OTy" firstAttribute="leading" secondItem="ri8-kC-0zu" secondAttribute="trailing" constant="8" id="0h1-2e-acu"/>
+                    <constraint firstItem="MC2-Ts-sZm" firstAttribute="top" secondItem="ri8-kC-0zu" secondAttribute="top" constant="-8" id="3KU-91-C8h"/>
+                    <constraint firstItem="9I2-qm-ZgA" firstAttribute="leading" secondItem="ri8-kC-0zu" secondAttribute="trailing" constant="8" id="Efa-zb-fUT"/>
+                    <constraint firstAttribute="trailing" secondItem="L06-Js-SFM" secondAttribute="trailing" constant="8" id="FtI-wC-KNS"/>
+                    <constraint firstItem="ri8-kC-0zu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="HJ5-SL-CNe"/>
+                    <constraint firstItem="NrQ-ag-6pY" firstAttribute="centerY" secondItem="L06-Js-SFM" secondAttribute="centerY" id="Itw-Z1-s0g"/>
+                    <constraint firstItem="9I2-qm-ZgA" firstAttribute="height" secondItem="55T-Au-M6j" secondAttribute="height" multiplier="0.5" id="QzT-cU-TEG"/>
+                    <constraint firstItem="55T-Au-M6j" firstAttribute="leading" secondItem="ri8-kC-0zu" secondAttribute="trailing" constant="8" id="SMb-6a-wnS"/>
+                    <constraint firstAttribute="bottom" secondItem="L06-Js-SFM" secondAttribute="bottom" constant="8" id="Ugz-iM-W2p"/>
+                    <constraint firstItem="55T-Au-M6j" firstAttribute="centerY" secondItem="ri8-kC-0zu" secondAttribute="centerY" id="YCa-HH-mEM"/>
+                    <constraint firstItem="MC2-Ts-sZm" firstAttribute="trailing" secondItem="ri8-kC-0zu" secondAttribute="trailing" constant="9" id="ZJn-8B-RMV"/>
+                    <constraint firstItem="NrQ-ag-6pY" firstAttribute="leading" secondItem="9I2-qm-ZgA" secondAttribute="trailing" constant="8" id="b8c-jD-6S7"/>
+                    <constraint firstItem="NrQ-ag-6pY" firstAttribute="leading" secondItem="55T-Au-M6j" secondAttribute="trailing" constant="8" id="bem-o6-PMu"/>
+                    <constraint firstItem="55T-Au-M6j" firstAttribute="top" secondItem="qe3-qH-OTy" secondAttribute="bottom" constant="4" id="cGc-ic-znF"/>
+                    <constraint firstItem="L06-Js-SFM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="eKv-EP-XDT"/>
+                    <constraint firstItem="ri8-kC-0zu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gl9-fw-fGP"/>
+                    <constraint firstItem="qe3-qH-OTy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="lEO-zR-fGK"/>
+                    <constraint firstItem="L06-Js-SFM" firstAttribute="leading" secondItem="NrQ-ag-6pY" secondAttribute="trailing" constant="8" id="lhj-aq-hx4"/>
+                    <constraint firstItem="qe3-qH-OTy" firstAttribute="height" secondItem="55T-Au-M6j" secondAttribute="height" multiplier="0.7" id="n0M-BX-EsT"/>
+                    <constraint firstItem="9I2-qm-ZgA" firstAttribute="top" secondItem="55T-Au-M6j" secondAttribute="bottom" id="qLP-Wt-5j9"/>
+                    <constraint firstItem="ri8-kC-0zu" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.75" id="xsi-ki-D8N"/>
+                    <constraint firstItem="NrQ-ag-6pY" firstAttribute="leading" secondItem="qe3-qH-OTy" secondAttribute="trailing" constant="8" id="zac-Sc-TPE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkIcon" destination="MC2-Ts-sZm" id="2fF-qe-ntP"/>
+                <outlet property="checkIconTopConstraint" destination="3KU-91-C8h" id="aD9-YV-eae"/>
+                <outlet property="checkIconTrailingConstraint" destination="ZJn-8B-RMV" id="9wV-G6-Mkm"/>
+                <outlet property="clockIcon" destination="NrQ-ag-6pY" id="QVE-JU-sf8"/>
+                <outlet property="detailsLabel" destination="9I2-qm-ZgA" id="mwJ-OJ-hF1"/>
+                <outlet property="notificationLabel" destination="qe3-qH-OTy" id="Pdq-re-IUs"/>
+                <outlet property="sakeImageView" destination="ri8-kC-0zu" id="JGR-gr-1m8"/>
+                <outlet property="sakeNameLabel" destination="55T-Au-M6j" id="Pih-92-IzH"/>
+                <outlet property="timeStampLabel" destination="L06-Js-SFM" id="Q8U-cv-Ng9"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="24"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check_circle" width="77" height="77"/>
+        <image name="clock_icon_gray" width="16" height="16"/>
+    </resources>
+</document>

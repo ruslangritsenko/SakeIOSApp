@@ -1,0 +1,44 @@
+INSERT OVERWRITE TABLE as_data.cdna_price_preference PARTITION (category)
+select easy_id, preference, category from
+    (select easy_id, map(
+"Air Conditioners",price_pref_air_conditioners_cd,
+"Alcohol Goods" ,price_pref_alcohol_goods_cd ,
+"Alcohol Goods Beer",price_pref_alcohol_goods_beer_cd,
+"Alcohol Goods Japanese" ,price_pref_alcohol_goods_japanese_cd ,
+"Alcohol Goods Western" ,price_pref_alcohol_goods_western_cd ,
+"Automotive Goods" ,price_pref_automotive_goods_cd ,
+"Av Goods Audio Systems" ,price_pref_av_goods_audio_systems_cd ,
+"Beauty And Cosmetic Goods",price_pref_beauty_and_cosmetic_goods_cd,
+"Contact Lens Goods" ,price_pref_contact_lens_goods_cd ,
+"Family Goods Kids Baby And Maternity" ,price_pref_family_goods_kids_baby_and_maternity_cd ,
+"Fashion Goods",price_pref_fashion_goods_cd,
+"Fashion Goods Ladies" ,price_pref_fashion_goods_ladies_cd ,
+"Fashion Goods Men",price_pref_fashion_goods_men_cd,
+"Food Goods",price_pref_food_goods_cd,
+"Food Goods Fruit" ,price_pref_food_goods_fruit_cd ,
+"Food Goods Meat",price_pref_food_goods_meat_cd,
+"Food Goods Rice And Grains",price_pref_food_goods_rice_and_grains_cd,
+"Food Goods Seafood" ,price_pref_food_goods_seafood_cd ,
+"Gardening And Diy Goods",price_pref_gardening_and_diy_goods_cd,
+"Health Food Goods",price_pref_health_food_goods_cd,
+"Hobby Games And Toys",price_pref_hobby_games_and_toys_cd,
+"Innerwear Mens Underwear",price_pref_innerwear_mens_underwear_cd,
+"Innerwear Womens Leggings And Stockings",price_pref_innerwear_womens_leggings_and_stockings_cd,
+"Innerwear Womens Underwear" ,price_pref_innerwear_womens_underwear_cd ,
+"Interior Bedroom And Storage",price_pref_interior_bedroom_and_storage_cd,
+"Jewelry And Accessories" ,price_pref_jewelry_and_accessories_cd ,
+"Kitchen Appliances",price_pref_kitchen_appliances_cd,
+"Outdoor And Sporting Goods",price_pref_outdoor_and_sporting_goods_cd,
+"Pc And Peripherals",price_pref_pc_and_peripherals_cd,
+"Pet Goods",price_pref_pet_goods_cd,
+"Pet Goods Cat",price_pref_pet_goods_cat_cd,
+"Pet Goods Dog" ,price_pref_pet_goods_dog_cd ,
+"Pet Goods Others" ,price_pref_pet_goods_others_cd ,
+"Shoes",price_pref_shoes_cd,
+"Sweets And Snacks Japanese",price_pref_sweets_and_snacks_japanese_cd,
+"Sweets And Snacks Western",price_pref_sweets_and_snacks_western_cd,
+"Water And Soft Drinks",price_pref_water_and_soft_drinks_cd
+    ) as featmap
+    from cdna_pres_prd.shopping_behavior)
+lateral view explode(featmap) as category, preference
+DISTRIBUTE BY category SORT BY easy_id;

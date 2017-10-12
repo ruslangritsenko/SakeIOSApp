@@ -1,0 +1,65 @@
+PODS:
+  - Alamofire (4.2.0)
+  - DateToolsSwift (2.0.0)
+  - EZLoadingActivity (1.01)
+  - FloatRatingView (2.0)
+  - KeychainSwift (7.0.0)
+  - Kingfisher (3.2.1)
+  - Localize-Swift (1.7.1)
+  - PagingView (0.5.0)
+  - SideMenu (2.0.6)
+  - SwiftyGif (1.2.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - DateToolsSwift (from `https://github.com/MatthewYork/DateTools.git`, branch `swift`)
+  - EZLoadingActivity (from `https://github.com/goktugyil/EZLoadingActivity.git`)
+  - FloatRatingView (~> 2.0.0)
+  - KeychainSwift
+  - Kingfisher
+  - Localize-Swift
+  - PagingView (from `https://github.com/KyoheiG3/PagingView.git`)
+  - SideMenu
+  - SwiftyGif (from `https://github.com/kirualex/SwiftyGif.git`, branch `swift3`)
+
+EXTERNAL SOURCES:
+  DateToolsSwift:
+    :branch: swift
+    :git: https://github.com/MatthewYork/DateTools.git
+  EZLoadingActivity:
+    :git: https://github.com/goktugyil/EZLoadingActivity.git
+  PagingView:
+    :git: https://github.com/KyoheiG3/PagingView.git
+  SwiftyGif:
+    :branch: swift3
+    :git: https://github.com/kirualex/SwiftyGif.git
+
+CHECKOUT OPTIONS:
+  DateToolsSwift:
+    :commit: c36311e6c0b28103f32311b54f1d27a334785bcc
+    :git: https://github.com/MatthewYork/DateTools.git
+  EZLoadingActivity:
+    :commit: f275b510b8892c998c9e49c6283833891e05d766
+    :git: https://github.com/goktugyil/EZLoadingActivity.git
+  PagingView:
+    :commit: 73c494eb20902212dabe160f2f1a4dede8cd9e05
+    :git: https://github.com/KyoheiG3/PagingView.git
+  SwiftyGif:
+    :commit: ae235956f5dcea6b65b33c0cb8219aa6c27b44fb
+    :git: https://github.com/kirualex/SwiftyGif.git
+
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  DateToolsSwift: 43bad526ba2209dd01a080201cfea8aca65bf4e0
+  EZLoadingActivity: edd7e387e5197b116ce2cccb3fd747ababc2a510
+  FloatRatingView: 857ab8f10040d06a42fc979f486c8f9fecd2f2e5
+  KeychainSwift: b6947435dd78cc442c64a84ae648dd0e871cf448
+  Kingfisher: 64ef28c6d3d6f344e3ae2d7f5c9da80439505d99
+  Localize-Swift: 6cabc1087c0e910e77bfa87c2ed3f65c80c0b2df
+  PagingView: 5cc6673b0c70179bbe9eb3203961c4b1fb5c3ce8
+  SideMenu: 90be7a14e9f54eb528f96f2033aa54f2992c5667
+  SwiftyGif: 5b93bed65ed6df90796dff11fea231d7119da460
+
+PODFILE CHECKSUM: dee1b7e99aad886a0ab2f0ed8f35c17e951e93b6
+
+COCOAPODS: 1.1.1
